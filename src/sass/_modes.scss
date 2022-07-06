@@ -62,7 +62,7 @@
 
 .cards-zone{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 30px;
     grid-gap: 10px;
     place-items: center;
@@ -70,8 +70,8 @@
 
 .card{
     background-color: white;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 80px;
 }
 
 

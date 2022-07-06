@@ -146,7 +146,7 @@ body a {
 
 .cards-zone {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 30px;
   grid-gap: 10px;
   place-items: center;
@@ -154,10 +154,16 @@ body a {
 
 .card {
   background-color: white;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 80px;
 }
 
+@media (min-width: 425px) {
+  .card {
+    width: 100px;
+    height: 100px;
+  }
+}
 @media (min-width: 765px) {
   .page-title {
     font-size: 8em;
@@ -178,11 +184,14 @@ body a {
     border-radius: 20px;
     font-size: 1.5em;
   }
-  .cards-zone {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 30px;
-    grid-gap: 10px;
-    place-items: center;
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 250px;
+    height: 200px;
   }
 }
