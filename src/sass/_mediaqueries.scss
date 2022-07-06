@@ -1,8 +1,12 @@
-@media (min-width: 425px){
-    .card{
-        width: 100px;
-        height: 100px;
+@media (min-width: 505px){
+    .cards-wrapper{
+        height: 80vh;
     }
+    
+    .card{
+    width: 100px;
+    height: 100px;
+}
 }
 
 
@@ -31,15 +35,7 @@
         font-size: 1.5em;
     }
 
-    .card{
-        width: 150px;
-        height: 150px;
-    }
 }
 
 @media (min-width: 1024px){
-    .card{
-        width: 250px;
-        height: 200px;
-    }
 }

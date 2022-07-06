@@ -138,15 +138,15 @@ body a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 90vw;
-  height: 80vh;
+  max-width: 500px;
+  height: 50vh;
   margin: auto;
   margin-top: 30px;
 }
 
 .cards-zone {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 30px;
   grid-gap: 10px;
   place-items: center;
@@ -154,11 +154,14 @@ body a {
 
 .card {
   background-color: white;
-  width: 70px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 505px) {
+  .cards-wrapper {
+    height: 80vh;
+  }
   .card {
     width: 100px;
     height: 100px;
@@ -183,15 +186,5 @@ body a {
     margin-bottom: 5px;
     border-radius: 20px;
     font-size: 1.5em;
-  }
-  .card {
-    width: 150px;
-    height: 150px;
-  }
-}
-@media (min-width: 1024px) {
-  .card {
-    width: 250px;
-    height: 200px;
   }
 }
