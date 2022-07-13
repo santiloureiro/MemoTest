@@ -1,9 +1,16 @@
 let cards = ["🚓", "🍕", "💣", "🚕", "🍌", "🚓", "🍕", "💣", "🚕", "🍌" ];
 
-function compareCards(card1, card2){
-    if(cards[card1] === cards[card2]){
-        alert("Son pareja");
+let cardsSelected = [];
+
+cardsSelected.push(cards[2]);
+cardsSelected.push(cards[1]);
+
+function compareCards(){
+    if(cardsSelected[1] === cardsSelected[0]){
+        console.log("Son pareja");
     } else{
-        alert("No son pareja");
+        console.log("No son pareja");
     }
 }
+
+compareCards();
