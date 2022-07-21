@@ -4,8 +4,16 @@ const cards = ["🚓", "🍕", "💣", "🚕", "🍌", "🚓", "🍕", "💣", "
 
 let cardsSelected = [];
 
-cardsSelected.push(cards[2]);
-cardsSelecte_d.push(cards[1]);
+//Constructor de Jugadores
+
+class Player {
+    constructor(name, score){
+        this.name = name;
+        this.score = score;
+    }
+}
+
+//Compara una carta seleccionada con otra carta seleccionada
 
 function compareCards(){
     if(cardsSelected[1] === cardsSelected[0]){
@@ -15,10 +23,10 @@ function compareCards(){
     }
 }
 
-compareCards();
+//Mezcla el array de cartas
 
 function shuffleCards () {
-    var j, x, index;
+    let j, x, index;
     for (index = cards.length - 1; index > 0; index--) {
         j = Math.floor(Math.random() * (index + 1));
         x = cards[index];
@@ -28,14 +36,7 @@ function shuffleCards () {
     return cards;
 }
 
-shuffleCards()
-
-class Player {
-    constructor(name, score){
-        this.name = name;
-        this.score = score;
-    }
-}
+//Crea Jugadores con el constructor
 
 function createPlayers(){
     const player1 = new Player(prompt("Enter Player One's Name"), 0);
@@ -45,9 +46,12 @@ function createPlayers(){
     alert("Jugador 1: " + player1.name + "\nJugador 2: " + player2.name);
 }
 
+//Pasa por consola todos los strings del array "cards"
+
 cards.forEach(el => {
     console.log(el)
 });
+
 
 const hayAutito = cards.find(el => el === "🚕");
 
@@ -56,3 +60,12 @@ const cardsString = cards.join()
 console.log(hayAutito)
 
 console.log(cardsString)
+
+shuffleCards()
+
+cardsSelected.push(cards[2]);
+cardsSelected.push(cards[1]);
+
+console.log(cardsSelected)
+
+compareCards();
